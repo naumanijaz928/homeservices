@@ -3,7 +3,8 @@ import styles from "./postCard.module.css";
 import Link from "next/link";
 import { FC } from "react";
 import { PostType } from "@/app/types/PostType";
-const PostCard = ({post} : PostType) => {
+
+const PostCard = ({ post }: { post: PostType }) => {
   return (
     <div className={styles.container}>
       <div className={styles.top}>
